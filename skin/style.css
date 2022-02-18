@@ -112,12 +112,22 @@ hr {
 }
 
 /* Layout Selector */
+#wrap {
+  position: relative;
+  height: auto;
+}
+.container {
+  position: relative;
+	width: 100%;
+  padding-top: 80px;
+	padding-bottom: 75px;
+  z-index: -1;
+}
 #header {
-	position: absolute;
+	position: fixed;
   top: 0px;
 	width: 100%;
   background-color: #F8DAE2;
-  height: 500px;
 }
 #header h1 {
 	padding: 28px 0;
@@ -147,7 +157,7 @@ hr {
 	left: 50%;
 	width: 26px;
 	height: 2px;
-	margin: -2px 100px 0 -13px;
+	margin: -2px 0 0 -13px;
 	background-color: #000;
 	text-indent: -999em;
 }
@@ -337,7 +347,9 @@ hr {
 }
 
 #footer {
-	position: relative;
+  position: absolute;
+	bottom: 0px;
+	width: 100%;
 	padding: 29px 0;
 	border-top: 1px solid #ebebeb;
 }
