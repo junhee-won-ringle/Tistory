@@ -113,8 +113,11 @@ hr {
 
 /* Layout Selector */
 #header {
-	position: relative;
+	position: absolute;
+  top: 0px;
 	width: 100%;
+  background-color: #F8DAE2;
+  height: 500px;
 }
 #header h1 {
 	padding: 28px 0;
@@ -144,7 +147,7 @@ hr {
 	left: 50%;
 	width: 26px;
 	height: 2px;
-	margin: -2px 0 0 -13px;
+	margin: -2px 100px 0 -13px;
 	background-color: #000;
 	text-indent: -999em;
 }
@@ -1149,8 +1152,8 @@ hr {
 	border-bottom: 1px solid #000;
 	font-style: normal;
 }
-.related-articles ul {
-}
+/* .related-articles ul {
+} */
 .related-articles ul li {
 	float: left;
 	width: 24.0625%;

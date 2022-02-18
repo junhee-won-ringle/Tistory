@@ -1,0 +1,26 @@
+<header id="header">
+  <h1><a href="[##_blog_link_##]">[##_title_##]</a></h1>
+  <button type="button" class="mobile-menu"><span>메뉴</span></button>
+  <div class="menu">
+    <nav id="gnb">
+      [##_category_list_##]
+    </nav>
+    <div class="social-link">
+      <s_if_var_sns-pinterest><a href="[##_var_sns-pinterest_##]" class="pinterest">Pinterest</a>
+      </s_if_var_sns-pinterest>
+      <s_if_var_sns-facebook><a href="[##_var_sns-facebook_##]" class="facebook">Facebook</a>
+      </s_if_var_sns-facebook>
+      <s_if_var_sns-twitter><a href="[##_var_sns-twitter_##]" class="twitter">Twitter</a></s_if_var_sns-twitter>
+      <s_if_var_sns-instagram><a href="[##_var_sns-instagram_##]" class="instagram">Instagram</a>
+      </s_if_var_sns-instagram>
+    </div>
+    <p>POWERED BY TISTORY</p>
+  </div>
+  <div class="search">
+    <s_search>
+      <input type="text" name="[##_search_name_##]" value="[##_search_text_##]" placeholder="검색내용을 입력하세요."
+        onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }">
+      <button type="submit" onclick="[##_search_onclick_submit_##]">검색</button>
+    </s_search>
+  </div>
+</header>
