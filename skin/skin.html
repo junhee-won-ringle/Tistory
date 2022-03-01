@@ -35,6 +35,9 @@
           </div>
           <p>POWERED BY TISTORY</p>
         </div>
+				<button id="darkModeButton">
+					다크모드
+				</button>
         <div class="search">
           <s_search>
             <input type="text" name="[##_search_name_##]" value="[##_search_text_##]" placeholder="검색내용을 입력하세요."
@@ -500,6 +503,14 @@
     </div>
     <script src="./images/script.js"></script>
   </s_t3>
-</body>
+  <script>
+    let darkModeButton = document.getElementById("darkModeButton");
+    darkModeButton.onclick = toggleDarkMode;
 
+    function toggleDarkMode() {
+      var wrap = document.getElementById("wrap");
+      wrap.classList.toggle("darkMode");
+    };
+  </script>
+</body>
 </html>
